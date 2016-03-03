@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, p {
+  font-family: 'Roboto', sans-serif;
+}
+
+.cursive {
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.container-fluid {
+  padding: 0 !important;
+}
+
+header {
+  text-align: center;
+  background-image: url('header.png');
+  background-size: cover;
+  background-position-y: 50%;
+  min-height: 250px;
+}
+
+header .container {
+  padding: 30px 15px;
+}
+
+header h1 {
+  font-size: 72px;
+  transform: rotate(-3deg);
+  color: #FFF;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.spacer {
+  height: 8px;
+  background-color: #97c5ed;
+}
+
+.sanders-quote {
+  padding: 32px 25% !important;
+}
+
+.sanders-quote h3 {
+  border-left: 1px solid #111;
+  padding-left: 4px;
+}
+
+.citation {
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.plan-header {
+  background-size: cover;
+  background-position: 50%;
+  min-height: 460px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.plan-header h1 {
+  margin: 0;
+  vertical-align: middle;
+  padding-top: 190px;
+  color: #FFF;
+  text-shadow: 1px 2px 6px rgba(0, 0, 0, 1);
+  font-size: 84px;
+}
+
+.plan-details {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.plan-cost {
+  font-size: 28px;
+}
+
+.plan-cost u {
+  text-decoration: underline;
+}
+
+.plan-figures {
+  margin-top: 32px;
+}
+
+.plan-figures h1, .plan-figures h3{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.plan-funding h1 {
+  color: #F55B5B;
+  padding-bottom: 16px;
+}
+
+.plan-revenue h1 {
+  color: #0076d7;
+}
+
+.plan-more_info {
+  margin-top: 16px;
+  display: block;
+  text-decoration: underline;
+  color: black;
+}
+
+.join {
+  text-align: center;
+  background-color: #0076d7;
+  padding: 32px !important;
+}
+
+.join h1 {
+  color: #FFF;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 1);
+  font-size: 36px;
+  margin-top: 0;
+}
+
+.join .btn {
+  color: #FFF;
+  background-color: #F55B5B;
+  border: none;
+  padding: 12px;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 4px;
+}
