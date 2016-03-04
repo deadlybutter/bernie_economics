@@ -3,8 +3,12 @@
   padding: 0;
 }
 
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, p, a {
   font-family: 'Roboto', sans-serif;
+}
+
+a:hover {
+  color: #F55B5B !important;
 }
 
 .cursive {
@@ -55,7 +59,8 @@ header h1 {
 
 .plan-header {
   background-size: cover;
-  background-position: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
   min-height: 460px;
   margin: 0 auto;
   text-align: center;
@@ -64,10 +69,16 @@ header h1 {
 .plan-header h1 {
   margin: 0;
   vertical-align: middle;
-  padding-top: 190px;
+  padding-top: 150px;
   color: #FFF;
   text-shadow: 1px 2px 6px rgba(0, 0, 0, 1);
   font-size: 84px;
+}
+
+.plan-cta {
+  text-align: center;
+  margin-top: 48px !important;
+  margin-bottom: 16px !important;
 }
 
 .plan-details {
@@ -79,10 +90,6 @@ header h1 {
   font-size: 28px;
 }
 
-.plan-cost u {
-  text-decoration: underline;
-}
-
 .plan-figures {
   margin-top: 32px;
 }
@@ -90,6 +97,7 @@ header h1 {
 .plan-figures h1, .plan-figures h3{
   margin-top: 0;
   margin-bottom: 0;
+  text-align: center;
 }
 
 .plan-funding h1 {
@@ -103,7 +111,7 @@ header h1 {
 
 .plan-more_info {
   margin-top: 16px;
-  display: block;
+  display: inline-block;
   text-decoration: underline;
   color: black;
 }
@@ -116,8 +124,7 @@ header h1 {
 
 .join h1 {
   color: #FFF;
-  text-shadow: 1px 2px 4px rgba(0, 0, 0, 1);
-  font-size: 36px;
+  font-size: 42px;
   margin-top: 0;
 }
 
@@ -129,4 +136,29 @@ header h1 {
   font-weight: 700;
   font-size: 18px;
   margin-top: 4px;
+}
+
+.footer {
+  text-align: center;
+  background-color: #0076d7;
+  color: #FFF;
+  padding-top: 32px !important;
+}
+
+.footer a {
+  color: #FFF;
+  font-size: 16px;
+}
+
+.footer .footer-message {
+  padding-top: 32px;
+}
+
+.footer-message h3 a {
+  font-size: 24px;
+}
+
+.footer-message p a {
+  font-size: 14px;
+  text-decoration: underline;
 }
