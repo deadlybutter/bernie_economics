@@ -23,12 +23,16 @@ header {
   text-align: center;
   background-image: url('header.png');
   background-size: cover;
-  background-position-y: 50%;
-  min-height: 250px;
+  background-position-y: 40%;
+  background-position-x: 50%;
+  min-height: 450px;
 }
 
 header .container {
   padding: 30px 15px;
+  position: relative;
+  top: 50%;
+  transform: translateY(20%);
 }
 
 .title {
@@ -62,7 +66,7 @@ header .container {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  min-height: 460px;
+  min-height: 560px;
   margin: 0 auto;
   text-align: center;
 }
