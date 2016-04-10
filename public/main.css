@@ -4,7 +4,7 @@
 }
 
 h1, h2, h3, h4, p, a {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Average', serif;
 }
 
 a:hover {
@@ -36,6 +36,7 @@ header .container {
   transform: rotate(-3deg);
   color: #FFF;
   text-shadow: 1px 2px 4px rgba(0, 0, 0, 1);
+  font-family: 'Fjalla One', sans-serif;
 }
 
 .spacer {
