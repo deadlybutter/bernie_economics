@@ -1,16 +1,6 @@
 {
   "topTwo": [
     {
-      "plan": "College for All",
-      "image": "college.jpg",
-      "cost": "$75 billion",
-      "cost_timeframe": "a year",
-      "funding": ["A Wall St. speculation tax"],
-      "revenue": "$300 billion",
-      "revenue_timeframe": "a year",
-      "more_info": "http://www.peri.umass.edu/fileadmin/pdf/ftt/Pollin--Heintz--Memo_on_FTT_Rates_and_Revenue_Potential_w_references----6-9-12.pdf"
-    },
-    {
       "plan": "Medicare for All Health Care",
       "image": "healthcare.jpg",
       "cost": "$1.38 trillion ",
@@ -19,6 +9,16 @@
       "revenue": "$1.39 trillion",
       "revenue_timeframe": "a year",
       "more_info": "https://berniesanders.com/wp-content/uploads/2016/01/friedman-memo-1.pdf"
+    },
+    {
+      "plan": "College for All",
+      "image": "college.jpg",
+      "cost": "$75 billion",
+      "cost_timeframe": "a year",
+      "funding": ["A Wall St. speculation tax"],
+      "revenue": "$300 billion",
+      "revenue_timeframe": "a year",
+      "more_info": "http://www.peri.umass.edu/fileadmin/pdf/ftt/Pollin--Heintz--Memo_on_FTT_Rates_and_Revenue_Potential_w_references----6-9-12.pdf"
     }
   ],
   "rest": [

@@ -31,7 +31,7 @@ header .container {
   padding: 30px 15px;
 }
 
-header h1 {
+.title {
   font-size: 72px;
   transform: rotate(-3deg);
   color: #FFF;
@@ -66,54 +66,51 @@ header h1 {
   text-align: center;
 }
 
-.plan-header h1 {
-  margin: 0;
-  vertical-align: middle;
-  padding-top: 150px;
-  color: #FFF;
-  text-shadow: 1px 2px 6px rgba(0, 0, 0, 1);
-  font-size: 84px;
-}
-
-.plan-cta {
-  text-align: center;
-  margin-top: 48px !important;
-  margin-bottom: 16px !important;
-}
-
 .plan-details {
-  text-align: left;
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin-top: -128px;
   margin-bottom: 16px;
-}
-
-.plan-cost {
-  font-size: 28px;
-}
-
-.plan-figures {
-  margin-top: 32px;
-}
-
-.plan-figures h1, .plan-figures h3{
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #0076d7;
   text-align: center;
+  padding: 8px;
+  color: #FFF;
+  border-radius: 2px;
 }
 
-.plan-funding h1 {
+.plan-funding {
+  margin-top: 32px;
+  text-align: left;
+  font-size: 20px;
+}
+
+.plan-funding p {
+  margin-bottom: 4px;
+}
+
+.plan-funding span {
   color: #F55B5B;
-  padding-bottom: 16px;
 }
 
-.plan-revenue h1 {
-  color: #0076d7;
+.plan-funding h3 {
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.plan-funding hr {
+  width: 95%;
+  margin: 4px auto;
 }
 
 .plan-more_info {
-  margin-top: 16px;
-  display: inline-block;
+  display: block;
+  text-align: left;
+  margin-top: 32px;
   text-decoration: underline;
-  color: black;
+  color: #FFF;
 }
 
 .join {
