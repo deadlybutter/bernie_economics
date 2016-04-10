@@ -37,7 +37,6 @@ header .container {
 
 .title {
   font-size: 72px;
-  /*transform: rotate(-3deg);*/
   color: #FFF;
   text-shadow: 1px 2px 4px rgba(0, 0, 0, 1);
   font-family: 'Fjalla One', sans-serif;
