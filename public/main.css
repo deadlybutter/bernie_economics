@@ -113,7 +113,6 @@ a:hover {
 .menu li {
   text-align: center !important;
   width: 100%;
-  height: 10%;
   display: block;
   height: 67px;
 }
@@ -364,6 +363,11 @@ header .subheading {
   .footer-message .notofficial {
     padding: 0 10px;
     line-height: 1.3em;
+  }
+
+  .menu li {
+    height: 50px;
+    font-size: .6em;
   }
 
 }
