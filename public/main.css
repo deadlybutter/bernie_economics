@@ -46,7 +46,7 @@ a:hover {
   cursor: pointer;
   position: absolute;
   right: 20px;
-  top: 42px;
+  top: 20px;
   z-index: 3;
   display: inline-block;
   width: 50px;
@@ -185,6 +185,7 @@ header .subheading {
   font-size: 16px;
   font-weight: 100;
   opacity: 0.5;
+  margin-top: 11px;
 }
 
 .plan-header {
@@ -226,7 +227,7 @@ header .subheading {
   font-weight: 100;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   letter-spacing: 1px;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .plan-funding span {
