@@ -315,3 +315,55 @@ header .subheading {
   text-decoration: underline;
 }
 
+.buttoncontainer {
+	width: 100%;
+	text-align: center;
+}
+
+@media only screen and (max-device-width: 768px) {
+
+    h1 {
+      font-size: 30px !important;
+    }
+
+   .plan-details {
+     padding: 20px;
+   }
+
+   .join {
+     padding: 20px !important;
+   }
+
+   a:hover {
+     height: 56px;
+     font-size: .8em;
+   }
+
+   header .heading {
+    font-size: 29px;
+   }
+
+   header .subheading {
+     font-size: 16px;
+   }
+
+  .plan-funding {
+     margin: 30px 5px 40px 5px;
+   }
+
+  .plan-funding p {
+     margin-bottom: 15px;
+     line-height: 23px;
+  }
+
+  .join h1 {
+    padding: 0 10px;
+    font-size: 20px;
+  }
+
+  .footer-message .notofficial {
+    padding: 0 10px;
+    line-height: 1.3em;
+  }
+
+}
