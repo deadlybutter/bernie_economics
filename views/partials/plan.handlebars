@@ -1,4 +1,4 @@
-<div class="plan container-fluid">
+<div id="{{this.id}}" class="plan container-fluid">
   <div class="plan-header" style="background-image: url({{this.image}})"></div>
   <div class="plan-details">
     <h1 class="title cursive">{{this.plan}}</h1>
@@ -6,7 +6,7 @@
       <h3 class="plan-cost">{{#if this.add_the}}The {{/if}}{{this.plan}} will cost {{this.cost}} {{this.cost_timeframe}}.</h3>
     {{/if}}
     {{#unless this.ignore_cta}}
-      <h1 class="plan-cta">This is how we pay for it.</h1>
+      <h3 class="plan-cta">This is how we pay for it:</h3>
     {{/unless}}
     <div class="plan-funding">
       {{#each this.funding}}
@@ -15,7 +15,7 @@
       <hr>
       <h3><span>=</span> {{this.revenue}} {{this.revenue_timeframe}}</h3>
     </div>
-    <a target="_blank" class="plan-more_info red-btn btn" href="{{this.more_info}}">Read more details here</a>
+    <div class="buttoncontainer"><a target="_blank" class="plan-more_info red-btn btn cursive" href="{{this.more_info}}">Click for details</a></div>
   </div>
 </div>
 {{> spacer}}

@@ -1,6 +1,100 @@
+<a id="menubutton">
+  <span class="icon">
+    <svg width="22px" height="13px" viewBox="0 0 22 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: block;">
+      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g fill="#fff">
+          <path d="M0,5 L18,5 L18,7 L0,7 L0,5 L0,5 Z"></path>
+          <path d="M0,10 L18,10 L18,12 L0,12 L0,10 L0,10 Z"></path>
+          <path d="M0,0 L18,0 L18,2 L0,2 L0,0 L0,0 Z"></path>
+        </g>
+      </g>
+    </svg>
+  </span>
+</a>
+
+<div id="menucontainer">
+  <span id="closemenubutton" class="closebutton hairline"></span>
+
+  <div class="menucontent">
+
+    <ul class="menu">
+      <li><a class="menuitem" href="javascript:void(0);" data-target="medicare">Medicare</a></li>
+      <li><a class="menuitem" href="javascript:void(0);" data-target="college">College</a></li>
+      <li><a class="menuitem" href="javascript:void(0);" data-target="rebuildamerica">Rebuild America</a></li>
+      <li><a class="menuitem" href="javascript:void(0);" data-target="ssea">Social Security</a></li>
+      <li><a class="menuitem" href="javascript:void(0);" data-target="employment">Employment</a></li>
+      <li><a class="menuitem" href="javascript:void(0);" data-target="leave">12 weeks leave</a></li>
+      <li><a class="menuitem" href="javascript:void(0);" data-target="pensions">Pensions</a></li>
+      <li><a class="menuitem" href="javascript:void(0);" data-target="estate">Estate Tax</a></li>
+      <li><a class="menuitem" href="javascript:void(0);" data-target="polluter">Polluter Welfare</a></li>
+    </ul>
+
+    <a class="btn red-btn cursive" href="https://go.berniesanders.com/page/signup/volunteer-for-bernie">JOIN THE MOVEMENT</a>
+
+  </div>
+</div>
+
+<script type="text/javascript">
+
+  (function(){
+
+    function scrollTo( yPos ) {
+      document.body.scrollTop = yPos;
+    }
+
+    function getYPosition( el ) {
+      var yPos = 0;
+      while (el) {
+        if (el.tagName == "BODY") {
+          var yScroll = el.scrollTop || document.documentElement.scrollTop;
+          yPos += (el.offsetTop - yScroll + el.clientTop);
+        } else {
+          yPos += (el.offsetTop - el.scrollTop + el.clientTop);
+        }
+        el = el.offsetParent;
+      }
+      return yPos;
+    }
+
+    var menubutton = document.getElementById( 'menubutton' );
+    var menu = document.getElementById( 'menucontainer' );
+
+    menubutton.onclick = function() {
+      menu.style.display = 'flex';  
+    }
+
+    var closemenubutton = document.getElementById( 'closemenubutton' );
+    closemenubutton.onclick = function() {
+      menu.style.display = 'none';  
+    }
+
+    function onmenuclick( e ) {
+
+      // scroll
+      var clickedbutton = e.target;
+      var targetid = clickedbutton.dataset.target;
+      var el = document.getElementById( targetid );
+      scrollTo( document.body.scrollTop + getYPosition( el ) );
+
+      // hide menu
+      menu.style.display = 'none';  
+
+    }
+
+    var menuitems = document.getElementsByClassName( 'menuitem' );
+    var nummenuitems = menuitems.length;
+    for ( var i = 0; i < nummenuitems; ++i ) {
+        menuitems[i].onclick = onmenuclick;
+    }
+
+  })();
+
+</script>
+
 <header class="container-fluid">
-  <div class="container">
-    <h1 class="title cursive">Bernie Economics</h1>
+  <div class="headingcontainer">
+    <div class="item heading">Bernie<br>Economics</div><br>
+    <div class="item subheading">A quick-reference</div>
   </div>
 </header>
 

@@ -1,6 +1,7 @@
 {
   "topTwo": [
     {
+      "id": "medicare",
       "plan": "Medicare for All Health Care",
       "image": "healthcare.jpg",
       "cost": "$1.38 trillion ",
@@ -11,6 +12,7 @@
       "more_info": "https://berniesanders.com/wp-content/uploads/2016/01/friedman-memo-1.pdf"
     },
     {
+      "id": "college",
       "plan": "College for All",
       "image": "college.jpg",
       "cost": "$75 billion",
@@ -23,6 +25,7 @@
   ],
   "rest": [
     {
+      "id": "rebuildamerica",
       "plan": "Rebuild America Act",
       "image": "bridge.jpg",
       "cost": "$1.5 trillion",
@@ -34,17 +37,19 @@
       "add_the": true
     },
     {
+      "id": "ssea",
       "plan": "Social Security Expansion Act",
       "image": "socialsecurity.jpg",
       "cost": "$1.2 trillion",
       "cost_timeframe": "over 10 years",
-      "funding": ["Removing payroll tax cap for earnings above $250,000"],
+      "funding": ["Remove payroll tax cap for earnings above $250,000"],
       "revenue": "$1.2 trillion",
       "revenue_timeframe": "over 10 years",
       "more_info": "http://www.ssa.gov/oact/solvency/BSanders_20150323.pdf",
       "add_the": true
     },
     {
+      "id": "employment",
       "plan": "Employ Young Americans Now Act",
       "image": "teen-jobs.jpg",
       "cost": "$5.5 billion",
@@ -56,7 +61,8 @@
       "add_the": true
     },
     {
-      "plan": "Offer 12 weeks of paid family and medical leave",
+      "id": "leave",
+      "plan": "12 weeks of paid family and medical leave",
       "image": "baby.jpg",
       "funding": ["Additional 0.2% Payroll Tax"],
       "revenue": "$319 billion",
@@ -64,6 +70,7 @@
       "more_info": "http://www.gillibrand.senate.gov/issues/paid-family-medical-leave"
     },
     {
+      "id": "pensions",
       "plan": "Keep Our Pension Promises Act",
       "image": "union.jpg",
       "cost": "$29 billion",
@@ -75,20 +82,22 @@
       "add_the": true
     },
     {
+      "id": "estate",
       "plan": "Responsible Estate Tax Act",
       "image": "house.jpg",
-      "funding": ["Progressive estate tax on inheritances over $3.5 million; closes estate tax loopholes"],
+      "funding": ["Progressive estate tax on inheritances over $3.5 million, which closes estate tax loopholes"],
       "revenue": "$214 billion",
       "revenue_timeframe": "over 10 years",
       "more_info": "http://www.budget.senate.gov/democratic/public/_cache/files/afd23c35-ea6f-4c29-9563-5e9c544fe4ae/responsible-estate-tax-act-summary.pdf",
       "ignore_cta": true
     },
     {
+      "id": "polluter",
       "plan": "End Polluter Welfare Act",
       "image": "coal.jpg",
       "cost": "$110 billion",
       "cost_timeframe": "over 10 years",
-      "funding": ["Ending tax breaks and subsidies for fossil fuel companies"],
+      "funding": ["End tax breaks and subsidies for fossil fuel companies"],
       "revenue": "$135 billion",
       "revenue_timeframe": "over 10 years",
       "more_info": "http://www.sanders.senate.gov/download/endpolluterwelfaresummary/?inline=file",

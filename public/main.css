@@ -11,12 +11,118 @@ a:hover {
   color: #F55B5B !important;
 }
 
+#menubutton {
+  position: fixed;
+  right: 20px;
+  top: 42px;
+  padding: 7px;
+  background: #0076d7;
+  width: 33px;
+  cursor: pointer;
+  z-index: 1;
+  opacity: 1;
+}
+
+#menubutton:hover {
+  opacity: 0.8;
+}
+
+#menucontainer {
+  align-items: center;
+  justify-content: center;
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba( 0, 118, 215, 0.98 );
+  z-index: 2;
+}
+
+.closebutton {
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 3;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.closebutton:hover::before, .closebutton:hover::after {
+  background: #1ebcc5;
+}
+
+.closebutton::before, .closebutton::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  margin-top: -1px;
+  background: #fff;
+}
+
+.closebutton::before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.closebutton::after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.closebutton.hairline::before, .closebutton.hairline::after {
+  height: 1px;
+}
+
 .cursive {
   font-family: 'Shadows Into Light', cursive;
+  letter-spacing: 3px;
+  line-height: 1.3em;
+  margin: 0 !important;
+}
+
+.title {
+  margin-bottom: 30px !important;
 }
 
 .container-fluid {
   padding: 0 !important;
+}
+
+.menucontent {text-align: center;}
+
+.menu {
+  width: 100%;
+}
+
+.menu li {
+  text-align: center !important;
+  width: 100%;
+  display: block;
+  height: 67px;
+}
+
+.menu li a {
+  color: #fff;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-family: Helvetica;
+  letter-spacing: 5px;
 }
 
 header {
@@ -24,22 +130,41 @@ header {
   background-image: url('header.png');
   background-size: cover;
   background-position-y: 40%;
-  background-position-x: 50%;
-  min-height: 450px;
+  background-position-x: -36%;
+  min-height: 580px;
 }
 
-header .container {
-  padding: 30px 15px;
-  position: relative;
-  top: 50%;
-  transform: translateY(20%);
+header .headingcontainer {
+  margin: 0 !important;
+  text-align: left;
+  display: inline-block;
+  position: absolute;
+  left: 30px;
+  top: 42px;
 }
 
-.title {
-  font-size: 54px;
+/* common for heading and subheading */
+header .headingcontainer .item {
+  background: #0076d7;
+  margin: 0;
+  font-family: Helvetica, sans-serif;
   color: #FFF;
-  text-shadow: 1px 2px 4px rgba(0, 0, 0, 1);
-  font-family: 'Fjalla One', sans-serif;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+header .heading {
+  font-size: 43px;
+  letter-spacing: 7px;
+  padding: 0 18px;
+}
+
+header .subheading {
+  font-size: 19px;
+  margin-top: 7px !important;
+  font-weight: 100;
+  letter-spacing: 2px;
+  padding: 3px 18px;
 }
 
 .spacer {
@@ -48,17 +173,17 @@ header .container {
 }
 
 .sanders-quote {
-  padding: 32px 25% !important;
+  padding: 32px 15% !important;
 }
 
 .sanders-quote h3 {
-  border-left: 1px solid #111;
-  padding-left: 4px;
 }
 
 .citation {
   font-size: 16px;
   font-weight: 100;
+  opacity: 0.5;
+  margin-top: 11px;
 }
 
 .plan-header {
@@ -72,31 +197,41 @@ header .container {
 
 .plan-details {
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
   display: block;
   margin-top: -128px;
   margin-bottom: 16px;
   margin-left: auto;
   margin-right: auto;
   background-color: #0076d7;
-  text-align: center;
-  padding: 8px;
+  padding: 53px;
   color: #FFF;
   border-radius: 2px;
 }
 
+.plan-details h3 {
+  letter-spacing: 2px;
+  font-weight: 100;
+  font-size: 22px;
+}
+
 .plan-funding {
-  margin-top: 32px;
+  margin: 40px 32px 50px 32px;
   text-align: left;
   font-size: 20px;
 }
 
 .plan-funding p {
   margin-bottom: 4px;
+  font-weight: 100;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
+  font-size: 20px;
 }
 
 .plan-funding span {
   color: #F55B5B;
+  margin-right: 12px;
 }
 
 .plan-funding h3 {
@@ -106,7 +241,6 @@ header .container {
 
 .plan-funding hr {
   width: 95%;
-  margin: 4px auto;
 }
 
 .plan-more_info {
@@ -124,8 +258,12 @@ header .container {
 
 .join h1 {
   color: #FFF;
-  font-size: 42px;
-  margin-top: 0;
+  font-size: 31px;
+  margin: 0 0 35px 0 !important;
+  margin-bottom: 23px;
+  letter-spacing: 4px;
+  padding: 0 53px;
+  font-weight: 100;
 }
 
 .red-btn {
@@ -136,6 +274,7 @@ header .container {
   font-weight: 700;
   font-size: 18px !important;
   margin-top: 4px;
+  padding: 16px 38px !important;
 }
 
 .red-btn:hover {
@@ -147,7 +286,7 @@ header .container {
   text-align: center;
   background-color: #0076d7;
   color: #FFF;
-  padding-top: 32px !important;
+  padding: 15px 0 !important;
 }
 
 .footer a {
@@ -159,11 +298,76 @@ header .container {
   padding-top: 32px;
 }
 
+.footer-message .notofficial {
+  padding: 0 174px;
+  margin-bottom: 30px !important;
+  line-height: 27px;
+  font-size: 13px;
+}
+
 .footer-message h3 a {
-  font-size: 24px;
+  font-size: 11px;
 }
 
 .footer-message p a {
   font-size: 14px;
   text-decoration: underline;
+}
+
+.buttoncontainer {
+	width: 100%;
+	text-align: center;
+}
+
+@media only screen and (max-device-width: 768px) {
+
+    h1 {
+      font-size: 30px !important;
+    }
+
+   .plan-details {
+     padding: 20px;
+   }
+
+   .join {
+     padding: 20px !important;
+   }
+
+   a:hover {
+     height: 56px;
+     font-size: .8em;
+   }
+
+   header .heading {
+    font-size: 29px;
+   }
+
+   header .subheading {
+     font-size: 16px;
+   }
+
+  .plan-funding {
+     margin: 30px 5px 40px 5px;
+   }
+
+  .plan-funding p {
+     margin-bottom: 15px;
+     line-height: 23px;
+  }
+
+  .join h1 {
+    padding: 0 10px;
+    font-size: 20px;
+  }
+
+  .footer-message .notofficial {
+    padding: 0 10px;
+    line-height: 1.3em;
+  }
+
+  .menu li {
+    height: 50px;
+    font-size: .6em;
+  }
+
 }
